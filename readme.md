@@ -7,5 +7,5 @@ fio. Esse úlHmo está conectado a um equipamento (analógico) de áudio e víde
 
 ## Video Demo
 <video width="320" height="240" controls>
-  <source src="./demo/0202.mov" type="video/mp4">
+  <source src="/demo/0202.mov" type="video/mp4">
 </video>
