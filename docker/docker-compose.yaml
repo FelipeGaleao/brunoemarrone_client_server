@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  media-server:
+    build:
+      context: ..
+      dockerfile: ./docker/Server-dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - media-network
+
+  media-client:
+    build:
+      context: ..
+      dockerfile: ./docker/Client-dockerfile
+    depends_on:
+      - media-server
+    networks:
+      - media-network
+
+networks:
+  media-network:
